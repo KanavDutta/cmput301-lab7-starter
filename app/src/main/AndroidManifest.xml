@@ -12,15 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidUITesting"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- ADD THIS: Register ShowActivity -->
+        <activity
+            android:name=".ShowActivity"
+            android:label="Show City"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
     </application>
 
 </manifest>
